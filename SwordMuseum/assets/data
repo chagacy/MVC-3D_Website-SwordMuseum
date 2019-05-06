@@ -1,0 +1,67 @@
+
+CREATE TABLE Model_3D (Id INTEGER PRIMARY KEY, x3dModelTitle TEXT, x3dCreationMethod TEXT, modelTitle TEXT, modelSubtitle TEXT, modelDescription TEXT)
+
+INSERT INTO Model_3D (Id, x3dModelTitle,x3dCreationMethod,modelTitle,modelSubtitle,modelDescription) VALUES (1, 'string_1','string_2','string_3','string_4','string_5'
+
+Home
+
+Title : Sword Museum
+Description : This website is a virtual museum displaying four different types of swords used throughout time. These swords are a samurai sword, cutlass, great swordand a dagger. On the 'models' page you will find 4 virtual models that you can interact with and inspect.
+
+Models
+
+Title
+Image
+Descriptions
+
+Samurai Sword
+SamuraiSword
+A samurai sword, also known as a katana, is a traditionally made Japanese sword used by the samurai of Japan. It is a curved single edged blade, with a long grip to allow for two hand use.
+
+
+Cutlass
+Cutlass
+A cutlass is a short sword, commonly used by sailors. It's a short and broad sword with a curved single edge blade and a basket-shaped guard to protect the hand.
+
+Great Sword
+GreatSword
+A great sword, also know as a long sword, is a heavy double edged sword with a grip made for two hands. It was used mostly in the late medieval times.
+
+Dagger
+Dagger
+A dagger is a a knife, designed to be small and used in close combat or for assinations. Above is a classic example of a medieval dagger, with a leather grip with a double edged blade.
+
+Extras:
+
+Title
+Description
+Reference
+
+Dust Particle Background
+This is a Javascript background that reacts to the position and movement of the mouse. This is adapted from an online resource referenced below.
+Ryan Leichliter, Dust Particles Simulation with Canvas, https://codepen.io/LeKohrs/pen/eVpEOa [Accessed 02/04/2019]
+
+
+
+
+CREATE TABLE Home_Page(Id INTEGER PRIMARY KEY, title TEXT, description TEXT)
+
+CREATE TABLE Model_Page(Id INTEGER PRIMARY KEY, modelTitle TEXT, modelDescription TEXT, image TEXT)
+
+CREATE TABLE Extras_Page(Id INTEGER PRIMARY KEY, extrasTitle TEXT, extrasDescription TEXT, reference TEXT)
+
+INSERT INTO Home_Page(Id INTEGER PRIMARY KEY, title TEXT, description TEXT) VALUES (1, 'Sword Museum', 'This website is a virtual museum displaying four different types of swords used throughout time. These swords are a samurai sword, cutlass, great swordand a dagger. On the models page you will find 4 virtual models that you can interact with and inspect.')
+
+
+INSERT INTO Model_Page(Id INTEGER PRIMARY KEY, modelTitle TEXT, modelDescription TEXT, image TEXT) VALUES (1, 'Samurai Sword', 'SamuraiSword', 'A samurai sword, also known as a katana, is a traditionally made Japanese sword used by the samurai of Japan. It is a curved single edged blade, with a long grip to allow for two hand use.')
+
+INSERT INTO Model_Page(Id INTEGER PRIMARY KEY, modelTitle TEXT, modelDescription TEXT, image TEXT) VALUES (2, 'Cutlass', 'Cutlass', 'A cutlass is a short sword, commonly used by sailors. It's a short and broad sword with a curved single edge blade and a basket-shaped guard to protect the hand.')
+
+INSERT INTO Model_Page(Id INTEGER PRIMARY KEY, modelTitle TEXT, modelDescription TEXT, image TEXT) VALUES (3, 'Great Sword', 'GreatSword', 'A great sword, also know as a long sword, is a heavy double edged sword with a grip made for two hands. It was used mostly in the late medieval times.')
+
+INSERT INTO Model_Page(Id INTEGER PRIMARY KEY, modelTitle TEXT, modelDescription TEXT, image TEXT) VALUES (4, 'Dagger', 'Dagger', 'A dagger is a a knife, designed to be small and used in close combat or for assinations. Above is a classic example of a medieval dagger, with a leather grip with a double edged blade.')
+
+
+INSERT INTO Extras_Page(Id INTEGER PRIMARY KEY, extrasTitle TEXT, extrasDescription TEXT, reference TEXT) VALUES()
+
+INSERT INTO Extras_Page(Id INTEGER PRIMARY KEY, extrasTitle TEXT, extrasDescription TEXT, reference TEXT) VALUES(1, 'Dust Particle Background', 'This is a Javascript background that reacts to the position and movement of the mouse. This is adapted from an online resource referenced below.', 'Ryan Leichliter, Dust Particles Simulation with Canvas, https://codepen.io/LeKohrs/pen/eVpEOa [Accessed 02/04/2019]')

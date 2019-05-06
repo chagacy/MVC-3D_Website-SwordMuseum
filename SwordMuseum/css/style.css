@@ -1,0 +1,298 @@
+
+body{ 
+    opacity:0;
+    transition: opacity 2s;
+    -webkit-transition: opacity 2s; /* Safari */
+    background-color: rgb(30,30,30);
+}
+
+#canvasDust{
+	background-color: rgb(30,30,30);
+	position:fixed;
+	left:0;
+	top:0;
+	z-index:-1;
+}
+
+.canvas-bg {
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-1;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.navbar{
+	background-color: rgb(45,45,45) !important;
+}
+
+.bg-grey{
+	background-color: rgb(45,45,45) !important;
+}
+
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    color: rgba(206,126,0,1);
+    text-shadow: 0px 0px 15px white;
+}
+
+.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.link-1 {
+  transition: 0.6s;
+  color: #ffffff;
+  font-size: 15px;
+  text-decoration: none;
+  border-right: 2px dotted transparent;
+}
+.link-1:hover {
+  border-right: 2px dotted #ffffff;
+  padding-bottom: 8px;
+}
+
+.logo-border {
+	border: 3px solid white;
+	padding: 3px;
+	border-radius: 2px;
+	width:40px;
+	-webkit-transition: width 1s ease-out; /* For Safari 3.1 to 6.0 */
+    transition: width 1s;
+    overflow:hidden;
+}
+
+.logo-border:hover {
+	font-size: 0px;
+	width:150px;
+}
+
+.logo-border:hover:after {
+	font-size:20px;
+    content: attr(data-hover);
+    transition:width 0.5s ease-in;
+}
+
+.menu-line {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+.transparent-bg{
+	background-color: rgba(0,0,0,0.8);
+	padding: 5px;
+	border-radius: 10px;
+	width:auto;
+}
+
+#main-text{
+	position: absolute;
+    display: block;
+    background-color: rgba(255,255,255,0.4);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 300px 15px rgba(206,126,0,0.4);
+}
+
+.homepage h2{
+	font-size:25px;
+}
+
+.homepage-height{
+	height:32vh;
+}
+
+.models-height-edge{
+	height:25vh;
+}
+
+.models-height-middle{
+	height:47vh;
+}
+
+.extras p{
+	font-size: 15px;
+}
+
+.downloads p{
+	font-size: 15px;
+}
+
+.extras-height{
+	height:15vh;
+}
+
+.extras-height-middle{
+	height:100vh;
+}
+
+.downloads-height{
+	height:33vh;
+}
+
+.divider2{
+	background-color: rgba(206,126,0,0.6);
+	margin-left: 10%;
+	margin-right:10%;
+	height:2px;
+}
+
+.carousel-caption{
+	margin-top:5%;
+	padding:0;
+}
+
+.carousel-caption h3{
+	font-size:18px;
+}
+
+.carousel-caption p{
+	font-size:15px;
+}
+
+.model-buttons h3{
+	font-size:20px;
+	color:white;
+}
+
+.background-glow{
+	box-shadow: 0px 0px 200px 2px rgba(206,126,0,0.4);
+	padding: 0;
+}
+.background-glow-models{
+	background-color: black;
+	box-shadow: 0px 0px 200px 2px rgba(206,126,0,0.4);
+	padding: 0;
+}
+
+.btn-model{
+	margin: 1%;
+}
+
+.button-width{
+	padding:0;
+}
+
+.lightbox-main-bg {
+	background-color: rgba(0, 0, 0, 1.0); /* Adjust the transparency to bring the color forward */
+}
+
+.fancybox-opened{
+	transition:none;
+}
+
+.model3D  {
+    background-color: rgba(0, 0, 0, 1.0); /* Adjust the transparency to bring the color forward */
+    border-radius: 5px;
+	box-shadow: 0px 0px 100px 5px rgba(206,126,0,0.4);
+    
+    padding: 2px;
+    z-index: 100;
+}
+
+#wire{
+	width:300px;
+	height:200px;
+}
+
+.download-link{
+	color:rgba(206,126,0,1.0);
+	border: 3px solid white;
+	text-decoration: none;
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) { 
+	.homepage h2{
+		font-size:30px;
+	}
+
+	.carousel-caption h3{
+		font-size:18px;
+	}
+
+	.model-buttons h3{
+		font-size:25px;
+		color:white;
+	}
+
+	.extras h3{
+		font-size:30px;
+	}
+
+	.extras p{
+		font-size:15px;
+	}
+
+	.downloads h3{
+		font-size:30px;
+	}
+
+	.downloads p{
+		font-size:15px;
+	}
+
+	#wire{
+		width:600px;
+		height:300px;
+	}
+}
+
+@media (min-width: 992px) {
+	.homepage h2{
+		font-size:35px;
+	}
+
+	.homepage p{
+		font-size:20px;
+	}
+
+	.carousel-caption h3{
+		font-size:25px;
+	}
+
+	.carousel-caption p{
+		font-size:18px;
+	}
+
+	.model-buttons h3{
+		font-size:30px;
+		color:white;
+	}
+
+	.extras h3{
+		font-size:35px;
+	}
+
+	.extras p{
+		font-size:18px;
+	}
+
+	.downloads h3{
+		font-size:35px;
+	}
+
+	.downloads p{
+		font-size:18px;
+	}
+
+	#wire{
+		width:800px;
+		height:400px;
+	}	
+
+}
+
